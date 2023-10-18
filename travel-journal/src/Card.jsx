@@ -1,4 +1,5 @@
 import React from "react";
+import mapPin from "/map-pin.svg";
 
 export default function Card(props) {
   return (
@@ -9,7 +10,7 @@ export default function Card(props) {
         </div>
         <div className="card-info">
           <div className="location">
-            <img src="./src/assets/images/map-pin.svg" alt="" />
+            <img src={mapPin} alt="" />
             <p className="country">{props.country.toUpperCase()}</p>
             <a target="_blank" className="mapsUrl" href={props.mapsUrl}>
               View on Google Maps
