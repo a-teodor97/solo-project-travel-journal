@@ -18,6 +18,7 @@ export default function App() {
         description={item.description}
       />
     );
+    console.log(indexOf.item);
   });
   return (
     <div>
